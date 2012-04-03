@@ -1,9 +1,12 @@
+require './lib/app-config.rb'
+AppConfig.instance.set(:bukkit)
+
 require File.expand_path('helper.rb')
 
 policy :test, :roles => :app do
 
   # Test packages here
-  requires :stub, :information => 'this was passed through Package#requires'
+  requires :stub
 
 end
 
