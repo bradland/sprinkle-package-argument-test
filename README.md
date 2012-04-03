@@ -1,6 +1,6 @@
 # Sprinkle Package Argument Test
 
-UPDATE: I now understand that ArbitraryOptions create accessor methods for Packages, such that any method invocation that doesn't exist will auto-magically create an accessor method. There is a 'solution' branch with a test that tries this method, but when looking at Policies#requires, I don't see how the options hash is passed to Package.
+UPDATE: I now understand that ArbitraryOptions create accessor methods for Packages, such that any method invocation that doesn't exist will auto-magically create an accessor method. There is a 'solution' branch with a test that tries this method, but when looking at [Policy#requires][5], I don't see how the options hash is passed to Package.
 
 ## Overview
 
@@ -64,3 +64,4 @@ Includes all the gems needed to run Sprinkle.
 [2]: https://github.com/crafterm/sprinkle/blob/master/lib/sprinkle/extensions/arbitrary_options.rb
 [3]: https://github.com/crafterm/sprinkle/blob/master/lib/sprinkle/package.rb
 [4]: https://github.com/crafterm/sprinkle/blob/master/lib/sprinkle/installers/installer.rb
+[5]: https://github.com/crafterm/sprinkle/blob/master/lib/sprinkle/policy.rb#L66
