@@ -4,7 +4,7 @@
 
 This repository is a simple set of [Sprinkle][1] scripts for testing the hand-off of params to packages when required by a policy. Specifically, I'm trying to do something like this in my policy:
 
-   requires :stub, :information => 'it worked'
+     requires :stub, :information => 'it worked'
 
 The desire is to have the hash passed in the second argument available within the Package that is required.
 
