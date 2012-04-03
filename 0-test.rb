@@ -1,7 +1,9 @@
+# AppConfig is a singleton used to store config state
 require './lib/app-config.rb'
 AppConfig.instance.set(:bukkit)
 
-require File.expand_path('helper.rb')
+# Load all our packages
+Dir[ File.dirname(__FILE__) + '/packages/*.rb'].each { |file| require file }
 
 policy :test, :roles => :app do
 
