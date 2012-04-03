@@ -1,5 +1,7 @@
 # Sprinkle Package Argument Test
 
+UPDATE: I now understand that ArbitraryOptions create accessor methods for Packages, such that any method invocation that doesn't exist will auto-magically create an accessor method. There is a 'solution' branch with a test that tries this method, but when looking at Policies#requires, I don't see how the options hash is passed to Package.
+
 ## Overview
 
 This repository is a simple set of [Sprinkle][1] scripts for testing the hand-off of params to packages when required by a policy. Specifically, I'm trying to do something like this in my policy:
