@@ -1,8 +1,8 @@
 package :stub do
   description "This package does nothing (intentionally); good for testing"
 
-  information = AppConfig.instance.get
+  information 'default text'
 
-  push_text information[:saying], 'myfile.txt'
+  push_text information, 'myfile.txt'
 
 end
